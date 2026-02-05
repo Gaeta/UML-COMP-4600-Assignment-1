@@ -56,7 +56,7 @@ addIndexes :: [i] -> [a] -> [Indexed i a]
 addIndexes ixs as = [a `at` i | (i, a) <- zip ixs as]
 
 removeIndexes :: [Indexed i a] -> [a]
-removeIndexes xs = map item xs
+removeIndexes = map item
 
 
 -- Exercise 3.4
